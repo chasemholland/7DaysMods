@@ -1,0 +1,2 @@
+gunHandgunT3DesertVultureHE, "Desert Vulture HE"
+gunHandgunT3DesertVultureHEDesc, "Powerfull handgun capable of firing highly explosive rounds."

@@ -36,7 +36,7 @@
 
 		<property class="Action0">
 			<property name="Class" value="Launcher"/>
-			<property name="Magazine_items" value="ammo44MagnumBulletHE, ammo44MagnumBulletFrag"/>
+			<property name="Magazine_items" value="ammo44MagnumBulletHE"/>
 			<property name="Sound_start" value="desertvulture_fire"/>
 			<property name="Sound_loop" value="desertvulture_fire"/>
 			<property name="Sound_end" value=""/>
