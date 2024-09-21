@@ -42,8 +42,7 @@
 			<property name="Sound_end" value=""/>
 			<property name="Sound_empty" value="dryfire"/>
 			<property name="AutoReload" value="false"/>
-			<property name="Particles_muzzle_fire" value="rocketLauncherFire"/>
-			<property name="Particles_muzzle_smoke" value="nozzlesmoke_m136"/>
+			<property name="Particles_muzzle_fire" value="gunfire_desertvulture"/>
 			<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
 			<property name="triggerEffectTriggerPullDualsense" value="PistolTrigger"/>
 			<property name="triggerEffectTriggerPullXbox" value="PistolTrigger"/>
@@ -83,12 +82,12 @@
 			<!-- <passive_effect name="MagazineSize" operation="perc_add" value="-.09,.09" tags="perkGunslinger"/> --> <!-- random MagazineSize -->
 			<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkGunslinger"/> <!-- random WeaponHandling -->
 
-			<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.3" tags="perkGunslinger"/>
-			<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.3" tags="perkGunslinger"/>
-			<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".35" tags="perkGunslinger"/>
-			<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkGunslinger"/>
-			<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" tags="perkGunslinger"/>
-			<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" tags="perkGunslinger"/>
+			<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0.1" tags="perkGunslinger"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0.1" tags="perkGunslinger"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0.1" tags="perkGunslinger"/>
+			<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="0.1" tags="perkGunslinger"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="0.1" tags="perkGunslinger"/>
+			<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="0.1" tags="perkGunslinger"/>
 
 			<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="3.5" tags="perkGunslinger"/>
 			<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="4" tags="perkGunslinger"/>
@@ -106,12 +105,12 @@
 	<item name="ammo44MagnumBulletHE">
 		<property name="Tags" value="ammo,perkDemolitionsExpert"/>
 		<property name="DisplayType" value="ammoLauncher"/>
-		<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
+		<property name="Meshfile" value="#@modfolder:Assets/miniRocket.unity3d?miniRocketPrefab.prefab"/> <!-- @:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab --> <!-- #@Mods:MyModlet/Assets/miniRocket.unity3d?Mesh.prefab -->
 		<property name="HoldType" value="45"/>
 		<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Mlead_scrap"/>
-		<property name="Stacknumber" value="20"/>
+		<property name="Stacknumber" value="64"/>
 		<property name="EconomicValue" value="250"/>
 		<property name="TraderStageTemplate" value="ammoTier2"/> <!-- ammoRocketHE -->
 		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
@@ -120,12 +119,12 @@
 		<property class="Action1">
 			<property name="Class" value="Projectile"/>
 			<property name="Explosion.BlockDamage" value="2500"/>
-			<property name="Explosion.EntityDamage" value="420"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
 			<property name="Explosion.ParticleIndex" value="5"/> <!-- which Prefab/particle is used -->
 			<property name="Explosion.RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
 			<property name="Explosion.RadiusEntities" value="4"/> <!-- damage radius for entities -->
 			<property name="Explosion.DamageBonus.water" value="0"/>
-			<property name="Gravity" value="-3"/>
+			<property name="Gravity" value="0"/>
 			<property name="FlyTime" value=".8"/>
 			<property name="LifeTime" value="7"/>
 			<property name="DeadTime" value="4"/>
@@ -134,10 +133,10 @@
 		<effect_group name="ammoRocketHE" tiered="false">
 			<passive_effect name="BlockDamage" operation="base_set" value="100"/>
 			<passive_effect name="EntityDamage" operation="base_set" value="20"/>
-			<passive_effect name="ProjectileVelocity" operation="base_set" value="30" tags="perkDemolitionsExpert"/>
+			<passive_effect name="ProjectileVelocity" operation="base_set" value="400" tags="perkDemolitionsExpert"/>
 			<display_value name="dExRadius" value="5"/>
 			<display_value name="dExBlockDamage" value="2500"/>
-			<display_value name="dExEntityDamage" value="420"/>
+			<display_value name="dExEntityDamage" value="1500"/>
 		</effect_group>
 	</item>
 	
