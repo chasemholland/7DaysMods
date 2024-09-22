@@ -6,7 +6,7 @@
 		<property name="Tags" value="weapon,ranged,revolver,perkDemolitionsExpert,explosivesSkill,launcher,44enforcer,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill,enforcerReload"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="HoldType" value="75"/>
-		<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Desert Eagle/desertEaglePrefab.prefab"/>
+		<property name="Meshfile" value="#@modfolder:Assets/goldenEagle.unity3d?goldenEaglePrefab.prefab"/> <!-- @:Other/Items/Weapons/Ranged/Desert Eagle/desertEaglePrefab.prefab -->
 		<property name="Material" value="MHandGunParts"/>
 		<property name="TintColor" value="80, 80, 80"/>
 		<property name="Weight" value="7"/>
