@@ -2,4 +2,63 @@
 
 <set xpath="//block[@name='forge']/property[@class='Workstation']/property[@name='InputMaterials']/@value">iron,brass,lead,glass,stone,clay,zinc,copper</set>
 
+<!-- Copper & Zinc Drop Chance -->
+<remove xpath="//block[@name='terrOreIron']"/>
+<remove xpath="//block[@name='terrOreLead']"/>
+<append xpath="/blocks">
+
+	<block name="terrOreIron">
+		<property name="CanMobsSpawnOn" value="true"/>
+		<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		<property name="DisplayType" value="blockTerrain"/>
+		<property name="Map.Color" value="120,70,0"/>
+		<property name="Material" value="MoreMetal"/>
+		<property name="Shape" value="Terrain"/>
+		<property name="Mesh" value="terrain"/>
+		<property name="Texture" value="33"/>
+		<property name="ImposterExclude" value="true"/>
+		<drop event="Harvest" name="resourceScrapIron" count="105" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceCopperOre" prob=".35" count="50" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="resourceScrapIron" count="150" prob="0.4" stick_chance="0"/>
+		<property name="SortOrder1" value="0000"/>
+		<property name="SortOrder2" value="0950"/>
+		<property name="Tags" value="ore,deepOre"/>
+		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+	</block>
+	
+	<block name="terrOreLead">
+		<property name="CanMobsSpawnOn" value="true"/>
+		<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		<property name="DisplayType" value="blockTerrain"/>
+		<property name="Map.Color" value="70,110,120"/>
+		<property name="Material" value="MoreMetal"/>
+		<property name="Shape" value="Terrain"/>
+		<property name="Mesh" value="terrain"/>
+		<property name="Texture" value="316"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="Weight" value="100"/>
+		<property name="EconomicValue" value="5"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="SellableToTrader" value="false"/>
+		<drop event="Harvest" name="resourceScrapLead" count="50" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceZincOre" prob=".35" count="50" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="resourceScrapLead" count="50" prob="0.4" stick_chance="0"/>
+		<property name="SortOrder1" value="0000"/>
+		<property name="SortOrder2" value="1000"/>
+		<property name="Tags" value="ore,deepOre"/>
+		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+	</block>
+
+</append>
+
 </configs>

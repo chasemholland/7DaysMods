@@ -19,7 +19,7 @@
 <!-- Forge Input -->
 <set xpath="//window[@name='windowForgeInput']/@materials_accepted">iron,brass,lead,glass,stone,clay,zinc,copper</set>
 <set xpath="//window[@name='windowForgeInput']/rect[@name='content2']/grid/@rows">8</set>
-<set xpath="//window[@name='windowForgeInput']/rect[@name='content2']/grid/@cell_height">24</set>
+<set xpath="//window[@name='windowForgeInput']/rect[@name='content2']/grid/@cell_height">26</set>
 <set xpath="//window[@name='windowForgeInput']/rect[@name='content2']/@height">223</set>
 <set xpath="//window[@name='windowForgeInput']/rect[@name='content']/grid[@controller='WorkstationMaterialInputGrid']/@rows">3</set>
 <set xpath="//window[@name='windowForgeInput']/@height">280</set>
