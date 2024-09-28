@@ -1,3 +1,11 @@
-key,English
-gunHandgunT3DesertVultureHE, "Desert Vulture HE"
-gunHandgunT3DesertVultureHEDesc, "Powerfull handgun capable of firing highly explosive rounds."
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+gunHandgunT3DesertVultureHE,,,,, "Desert Vulture HE"
+gunHandgunT3DesertVultureHEDesc,,,,, "Powerfull handgun capable of firing highly explosive rounds."
+ammo44MagnumBulletHE,,,,, ".44 Magnum HE"
+ammo44MagnumBulletHEDesc,,,,, "Highly explosive .44 magnum bullet only used with the Desert Vulture HE."
+resourceZincOre,,,,, "Zinc"
+resourceZincOreDesc,,,,, "Zinc ore is often found along side lead ore. Can be combined with copper ore to form brass in the forge."
+resourceCopperOre,,,,, "Copper"
+resourceCopperOreDesc,,,,, "Copper ore is often found along side iron ore. Can be combined with zinc ore to form brass in the forge."
+lblzinc,UI,XUI Forge,,,Zinc
+lblcopper,UI,XUI Forge,,,Copper

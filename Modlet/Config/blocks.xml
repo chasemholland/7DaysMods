@@ -1,4 +1,5 @@
 <configs>
 
+<set xpath="//block[@name='forge']/property[@class='Workstation']/property[@name='InputMaterials']/@value">iron,brass,lead,glass,stone,clay,zinc,copper</set>
 
 </configs>

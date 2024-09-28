@@ -1,7 +1,10 @@
 <configs>
 
-<!-- DesertVultureHE -->
+<remove xpath="/items/item[@name='casinoCoin']"/>
+
 <append xpath="/items">
+
+<!-- DesertVultureHE -->
 	<item name="gunHandgunT3DesertVultureHE">
 		<property name="Tags" value="weapon,ranged,revolver,perkDemolitionsExpert,explosivesSkill,launcher,44enforcer,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill,enforcerReload"/>
 		<property name="DisplayType" value="rangedGun"/>
@@ -138,6 +141,94 @@
 			<display_value name="dExBlockDamage" value="2500"/>
 			<display_value name="dExEntityDamage" value="1500"/>
 		</effect_group>
+	</item>
+	
+<!-- resourceZincOre -->
+	<item name="resourceZincOre">
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MresourceZincOre"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="15"/>
+		<property name="EconomicBundleSize" value="10"/>
+		<property name="Group" value="Resources"/>
+		<property name="RepairTime" value=".5"/>
+		<property name="RepairAmount" value="20"/>
+		<property name="CraftingIngredientTime" value=".2"/>
+		<property name="SoundPickup" value="scrapiron_grab"/>
+		<property name="SoundPlace" value="scrapiron_place"/>
+	</item>
+	
+	<item name="unit_zinc">
+		<property name="Extends" value="unit_iron"/>
+		<property name="CustomIcon" value="resourceZincOre"/>
+		<property name="Material" value="MresourceZincOre"/>
+		<property name="CreativeMode" value="None"/>
+	</item>
+
+
+<!-- resourceCopperOre -->
+	<item name="resourceCopperOre">
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MresourceCopperOre"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="15"/>
+		<property name="EconomicBundleSize" value="10"/>
+		<property name="Group" value="Resources"/>
+		<property name="RepairTime" value=".5"/>
+		<property name="RepairAmount" value="20"/>
+		<property name="CraftingIngredientTime" value=".2"/>
+		<property name="SoundPickup" value="scrapiron_grab"/>
+		<property name="SoundPlace" value="scrapiron_place"/>
+	</item>
+	
+	<item name="unit_copper">
+		<property name="Extends" value="unit_iron"/>
+		<property name="CustomIcon" value="resourceCopperOre"/>
+		<property name="Material" value="MresourceCopperOre"/>
+		<property name="CreativeMode" value="None"/>
+	</item>
+
+<!-- Duke Cast -->
+<!--
+	<item name="toolDukeCast">
+		<property name="UnlockedBy" value="craftingWorkstations"/>
+		<property name="Tags" value="workstationSkill"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MtoolDukeCast"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Tools/Traps"/>
+		<property name="EconomicValue" value="20000"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="ItemTypeIcon" value="forge"/>
+		<property name="SoundPickup" value="crucible_grab"/>
+		<property name="SoundPlace" value="crucible_place"/>
+	</item>
+-->
+	
+<!-- Duke's Casino Coin -->
+	<item name="casinoCoin">
+		<property name="Tags" value="dukes"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MresourceScrapBrassSmall"/>
+		<property name="MeltTimePerUnit" value=".4"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="20000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="5"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="Group" value="Resources"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="SoundPickup" value="coins_grab"/>
+		<property name="SoundPlace" value="coins_place"/>
 	</item>
 	
 </append>

@@ -1,4 +1,33 @@
 <configs>
 
+<append xpath="/materials">
+
+<!-- MresourceZincOre -->
+	<material id="MresourceZincOre">
+		<property name="damage_category" value="metal"/>
+		<property name="surface_category" value="metal"/>
+		<property name="forge_category" value="zinc"/>
+		<property name="Experience" value="10"/>
+	</material>
+	
+<!-- MresourceCopperOre -->
+	<material id="MresourceCopperOre">
+		<property name="damage_category" value="metal"/>
+		<property name="surface_category" value="metal"/>
+		<property name="forge_category" value="copper"/>
+		<property name="Experience" value="10"/>
+	</material>
+	
+<!-- Duke's Casino Coin Cast -->
+<!--
+	<material id="MtoolDukeCast">
+		<property name="damage_category" value="metal"/>
+		<property name="surface_category" value="metal"/>
+		<property name="forge_category" value="iron"/>
+		<property name="Experience" value="100"/>
+	</material>
+-->
+
+</append>
 
 </configs>
